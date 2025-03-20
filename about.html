@@ -1,149 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Clean Blog - intoduction</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <title>Clean Blog - Introduction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #1e293b;
+        }
+    </style>
 </head>
-
-<body>
-
+<body class="font-['Inter'] bg-[#0f172a] text-[#e2e8f0] min-h-screen">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+    <nav class="fixed w-full top-0 z-50 bg-[#0f172a]/90 backdrop-blur-sm border-b border-[rgba(99,102,241,0.1)]">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold text-white">Porto blog</a>
+                <div class="space-x-2">
+                    <a href="index.html" class="nav-link inline-block text-[#e2e8f0] hover:text-white">Home</a>
+                    <a href="about.html" class="nav-link inline-block text-[#e2e8f0] hover:text-white active">Introduction</a>
+                    <a href="post.html" class="nav-link inline-block text-[#e2e8f0] hover:text-white">Sample Post</a>
+                    <a href="contact.html" class="nav-link inline-block text-[#e2e8f0] hover:text-white">Contact</a>
+                </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">intoduction</a>
-                    </li>
-                    <li>
-                        <a href="post.html">Sample Post</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="about-header" style="background-image: url('img/about-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>aboutductions</h1>
-                        <hr class="small">
-                        <span class="subheading">This is what I do.</span>
-                    </div>
-                </div>
-            </div>
+    <header class="hero-gradient pt-24 pb-16 relative overflow-hidden" style="background-image: url('img/about-bg.jpg'); background-size: cover;">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 id="main-title" class="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-up transition-transform duration-500">The Trip</h1>
+            <div class="w-16 h-1 bg-[var(--primary)] mx-auto mb-4"></div>
+            <p class="text-xl text-[#e2e8f0]/80 animate-fade-up animation-delay-200">We will talk about our trip here.</p>
         </div>
     </header>
 
     <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestiae debitis nobis, quod sapiente qui voluptatum, placeat magni repudiandae accusantium fugit quas labore non rerum possimus, corrupti enim modi! Et.</p>
-            </div>
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <div class="feature-card reveal-on-scroll">
+            <p class="text-[#e2e8f0]/90 mb-6 leading-relaxed">
+                Here you can find a summary of our trip with our general opinion on the school trip to Porto, Portugal with the IPI school.
+            </p>
         </div>
     </div>
 
-    <hr>
-
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
-                </div>
+    <footer class="bg-[#0f172a]/90 border-t border-[rgba(99,102,241,0.1)] py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-[#e2e8f0]/60 hover:text-[var(--primary)] transition-colors">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-[#e2e8f0]/60 hover:text-[var(--primary)] transition-colors">
+                    <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a href="#" class="text-[#e2e8f0]/60 hover:text-[var(--primary)] transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
             </div>
+            <p class="text-[#e2e8f0]/60 text-sm">Copyright © Your Website 2014</p>
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script> <!-- Replace with your Font Awesome kit ID -->
+    <script>
+        $(document).ready(function() {
+            // Scroll reveal and header animation
+            $(window).scroll(function() {
+                $('.reveal-on-scroll').each(function() {
+                    if($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                        $(this).addClass('revealed');
+                    }
+                });
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+                var scroll = $(window).scrollTop();
+                if(scroll > 100) {
+                    $("#main-title").css("transform", "scale(1.2)");
+                } else {
+                    $("#main-title").css("transform", "scale(1)");
+                }
+            });
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
-
+            // Page transition
+            $('a[href$=".html"]').not('[href="#"]').click(function(e) {
+                e.preventDefault();
+                var link = $(this).attr('href');
+                $('body').fadeOut(500, function() {
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
